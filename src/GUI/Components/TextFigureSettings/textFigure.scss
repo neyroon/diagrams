@@ -1,0 +1,28 @@
+.text-settings-buttons {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 9px;
+
+  .text-btn-union {
+    display: flex;
+    justify-content: space-around;
+
+    .text-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px;
+      background-color: #eee;
+      border-radius: 3px;
+      border: 1px solid #d3d3d3;
+
+      &.active {
+        background-color: rgb(179, 206, 219);
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
